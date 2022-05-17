@@ -1,7 +1,7 @@
 <template>
   <div id="mm">   
     <h3>{{ sitename }}</h3>
-    <HelloWorld msg="Welcome!" />
+    <HelloWorld msg="Welcome, dude!" />
   </div>
 </template>
 

@@ -39,5 +39,20 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "",
+  "main": "babel.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ledyanka/chpok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ledyanka/chpok/issues"
+  },
+  "homepage": "https://github.com/ledyanka/chpok#readme"
 }
