@@ -39,9 +39,9 @@
 <script>
   export default {
         tab: null,
-        items: [
-          'Red', 'Blue', 'Pink', 'Green',
-        ],
+        items = [
+          'Red', 'Blue', 'Pink', 'Green'
+        ]
       }
 </script>
 

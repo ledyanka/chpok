@@ -18,54 +18,27 @@ export default {
     }
   },
 }
-</script>
+</script> 
+<script>
+import tab from './components/tabTwo.vue'
 
- <script>
-    import searchCup from 'searchCup.vue';
+export default {
+  name: 'App',
+  components: { tab},
 
-    const debounce = function (f, ms) {
-        let timer = null;
-        return function (...args) {
-            const onComplete = () => {
-                f.apply(this, args);
-                timer = null;
-            }
-            if (timer) {
-                clearTimeout(timer);
-            }
-            timer = setTimeout(onComplete, ms);
-        };
+  data() {
+    return {
+      tab: null,
+      items: [
+        { tab: "One", content: "Tab 1 Content" },
+        { tab: "Two", content: "Tab 2 Content" },
+        { tab: "Three", content: "Tab 3 Content" },
+        { tab: "Four", content: "Tab 4 Content" },
+        { tab: "Five", content: "Tab 5 Content" },
+      ],
     }
-
-    export default {
-        data: function () {
-            return {
-                keywords: '',
-                searchArr: []
-            }
-        },
-        watch: {
-            keywords(after, before) {
-                this.FetchData();
-            }
-        },
-        methods: {
-            FetchData: debounce(function () {
-                if(!this.keywords) return this.searchArr = []
-                axios.get('/api/search', {
-                        params: {
-                            keywords: this.keywords
-                        }
-                    })
-                    .then(res => {
-                        this.searchArr = res.data
-                    })
-                    .catch(err => {
-
-                    });
-            }, 200)
-        }
-    }
+  },
+}
 </script>
 <style>
 #mm {
