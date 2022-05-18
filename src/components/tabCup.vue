@@ -38,12 +38,10 @@
 
 <script>
   export default {
-    name: 'tabCup',
-        tab: 4,
+        tab: null,
         items: [
           'Red', 'Blue', 'Pink', 'Green',
         ],
-        text: '',
       }
 </script>
 
