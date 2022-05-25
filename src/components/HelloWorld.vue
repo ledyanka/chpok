@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <textarea v-model='sitename' />
-    <button @click='sendTo()' {{ msg }}> </button>
+    <button @click='sendTop()' {{ msg }}> </button>
 
     <p>
       <BigCup :msg='sitename' />
