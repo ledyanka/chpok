@@ -2,44 +2,31 @@
   <div id="mm">   
     <h3>{{ sitename }}</h3>
     <HelloWorld msg="Welcome, dude!" />
+    <TabsSample :items="this.items" />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import TabsSample from './components/TabsSample.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld },
+  components: { HelloWorld, TabsSample },
 
   data() {
     return {
-      sitename: "Hello, honey!"
-    }
-  },
-}
-</script> 
-<script>
-import tab from './components/tabTwo.vue'
-
-export default {
-  name: 'App',
-  components: { tab},
-
-  data() {
-    return {
-      tab: null,
+      sitename: "Hello, honey!",
       items: [
-        { tab: "One", content: "Tab 1 Content" },
-        { tab: "Two", content: "Tab 2 Content" },
-        { tab: "Three", content: "Tab 3 Content" },
-        { tab: "Four", content: "Tab 4 Content" },
-        { tab: "Five", content: "Tab 5 Content" },
-      ],
+        { tab: "Pink", content: ["pink"] },
+        { tab: "Blue", content: ["blue"] },
+        { tab: "Yellow", content: ["yellow"] },
+      ]
     }
   },
 }
 </script>
+
 <style>
 #mm {
   font-family: Avenir, Helvetica, Arial, sans-serif;

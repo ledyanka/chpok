@@ -4,9 +4,8 @@
 
 <script>
 export default {
-    name: 'BigCup',
-    props: {
-        msg: String,
+    name: 'BigCup'
+
     }
-}
+
 </script>
