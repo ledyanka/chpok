@@ -16,18 +16,12 @@
 
 <script>
 export default {
-  name: "TabsSample",
+  name: "TabsSamplePage",
   props: { items: Array },
   data() {
     return {
       tab: null,
-    };
-  },
-  methods: {
-    filter() {
-      this.$emit ({})
     }
-  }
-  
-};
+  },  
+}
 </script>

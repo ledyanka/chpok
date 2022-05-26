@@ -2,17 +2,17 @@
   <div id="mm">   
     <h3>{{ sitename }}</h3>
     <HelloWorld msg="Welcome, dude!" />
-    <TabsSample :items="this.items" />
+    <TabsSamplePage :items="this.items" />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import TabsSample from './components/TabsSample.vue'
+import TabsSamplePage from './components/TabsSamplePage.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld, TabsSample },
+  components: { HelloWorld, TabsSamplePage },
 
   data() {
     return {
